@@ -23,7 +23,7 @@ function Add() {
     let addData = async (newData) => {
         setBtn("Adding...")
         try {
-          let result = await axios.post('http://localhost:9000/data/create-data', newData);
+          let result = await axios.post('https://chart-server-l3wn.onrender.com/data/create-data', newData);
           
           if (result.data.ok) {
             console.log('Data added successfully:');

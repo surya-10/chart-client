@@ -34,7 +34,7 @@ function Edit() {
     let addData = async (newData) => {
         setBtn("Updating...")
         try {
-          let result = await axios.put(`http://localhost:9000/data/update/${id}`, newData);
+          let result = await axios.put(`https://chart-server-l3wn.onrender.com/data/update/${id}`, newData);
           
           if (result.data.ok) {
             console.log('Data updated successfully:');

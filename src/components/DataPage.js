@@ -10,7 +10,7 @@ function DataPage() {
 
   let handleDelete = async (id) => {
     try {
-      let result = await axios.delete(`http://localhost:9000/data/delete/${id}`);
+      let result = await axios.delete(`https://chart-server-l3wn.onrender.com/data/delete/${id}`);
       console.log(result.message)
       if(result.data.ok){
         setEnergyData(energyData.filter(data => data._id !== id));

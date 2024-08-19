@@ -22,7 +22,7 @@ function App() {
 
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:9000/data/get-all', {
+        const response = await axios.get('https://chart-server-l3wn.onrender.com/data/get-all', {
           cancelToken: source.token,
         });
         // setEnergyData(response.data.data);
