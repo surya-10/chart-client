@@ -26,7 +26,7 @@ let Dashboard = () => {
       x: {
         title: {
           display: true,
-          text: 'Time (HH:MM)',
+          text: 'Date',
         },
       },
       y: {
